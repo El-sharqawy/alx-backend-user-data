@@ -17,7 +17,8 @@ def filter_datum(
     temp = message
     for field in fields:
         temp = re.sub(
-            field + "=.*?" + separator, field + "=" + redaction + separator, temp
+            field + "=.*?" + separator,
+            field + "=" + redaction + separator, temp
         )
     return temp
 
